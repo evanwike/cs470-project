@@ -3,8 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  USERNAME: 'evan',
+  PASSWORD: '5291Ev!n',
+  SERVER: 'umkc-cs470.database.windows.net',
+  DB: 'cs470'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
