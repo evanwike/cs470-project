@@ -1,5 +1,5 @@
 export interface Therapist {
-  id: number;
-  firstName: string;
-  lastName: string;
+  'Therapist ID': number;
+  First: string;
+  Last: string;
 }

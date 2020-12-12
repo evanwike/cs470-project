@@ -1,10 +1,10 @@
 export interface Patient {
-  "patient id"?: number;
-  "therapist id"?: number;
-  first?: string;
-  last?: string;
-  injury?: string;
-  medications?: string;
-  "treatment plan"?: string;
-  "tests taken"?: number;
+  "Patient ID"?: number;
+  "Therapist ID"?: number;
+  First?: string;
+  Last?: string;
+  Injury?: string;
+  Medications?: string;
+  "Treatment Plan"?: string;
+  "Tests Taken"?: number;
 }

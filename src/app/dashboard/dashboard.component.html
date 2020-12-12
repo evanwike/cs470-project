@@ -1,5 +1,22 @@
-<mat-grid-list cols="1">
-  <mat-grid-tile *ngFor="let patient of (patients$ | async)">
-    <app-patient [patient]="patient"></app-patient>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="container">
+  <h3>CS-470</h3>
+  <mat-card>
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="Patients">
+        <mat-tab-group>
+          <mat-tab label="All"><app-patients [patients$]="patients$"></app-patients></mat-tab>
+          <mat-tab label="Tests"><app-patient-tests></app-patient-tests></mat-tab>
+        </mat-tab-group>
+      </mat-tab>
+      <mat-tab label="Results">
+        <app-results [results$]="results$"></app-results>
+      </mat-tab>
+      <mat-tab label="Therapists">
+        <app-therapists [therapists$]="therapists$"></app-therapists>
+      </mat-tab>
+      <mat-tab label="Tests">
+        <app-tests [tests$]="tests$"></app-tests>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>

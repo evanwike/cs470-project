@@ -1,0 +1,24 @@
+<table mat-table [dataSource]="tests$" class="mat-elevation-z8 w-100">
+  <ng-container matColumnDef="Test ID">
+    <th mat-header-cell *matHeaderCellDef> Test ID </th>
+    <td mat-cell *matCellDef="let element"> {{element['Test ID']}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Test Name">
+    <th mat-header-cell *matHeaderCellDef> Test Name </th>
+    <td mat-cell *matCellDef="let element"> {{element['Test Name']}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Test Template">
+    <th mat-header-cell *matHeaderCellDef> Test Template </th>
+    <td mat-cell *matCellDef="let element"> {{element['Test Template']}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columns"></tr>
+  <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+
+  <!-- Row shown when there is no matching data. -->
+  <!--  <tr class="mat-row" *matNoDataRow>-->
+  <!--    <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>-->
+  <!--  </tr>-->
+</table>
