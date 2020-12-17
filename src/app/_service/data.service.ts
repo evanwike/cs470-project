@@ -75,9 +75,6 @@ export class DataService {
       )
   }
 
-
-
-
   handleError(error: Observable<Object> | any) {
     let errorMsg = '';
 
